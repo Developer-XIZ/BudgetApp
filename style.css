@@ -42,6 +42,21 @@ input::-webkit-inner-spin-button {
     color: #FF5049;
 }
 
+.item-changes ,
+.item-delete-button ,
+.item-value ,
+.type-changes-value ,
+.value-number ,
+.value-percentage ,
+.item-percentage {
+    float: right;
+}
+
+.item-description ,
+.type-changes-name {
+    float: left;
+}
+
 /*********************************************
 Top-class-styles
 *********************************************/
@@ -97,17 +112,7 @@ Top-class-styles
 }
 
 .type-changes-name {
-    float: left;
     text-transform: uppercase;
-}
-
-.type-changes-value {
-    float: right;
-}
-
-.value-number ,
-.value-percentage {
-    float: right;
 }
 
 .value-percentage {
@@ -123,10 +128,6 @@ Top-class-styles
     height: auto;
     font-size: 11px;
     border-radius: 3px;
-}
-
-.item-percentage {
-    float: right;
 }
 
 .Income-list .item-percentage {
@@ -205,16 +206,6 @@ Bottom-class-styles
 
 .item:first-child { border-top: 1px solid #e7e7e7; }
 .item:nth-child(even) { background-color: #f7f7f7; }
-
-.item-description {
-    float: left;
-}
-
-.item-changes ,
-.item-delete-button ,
-.item-value {
-    float:  right;
-}
 
 .item-percentage ,
 .item-value {
