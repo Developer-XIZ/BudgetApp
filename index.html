@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Budgety</title>
+    </head>
+    <body>
+        <div class="top">
+            <div class="Budget-form-info">
+                <div id="Date-Time">
+                    Available Budget in <span class="Date-Time">%Month%</span>
+                </div>
+                <h1 id="Budget-calculator"></h1>
+                <div id="Budget-all-changes">
+                    <div id="Budget-type-income" class="type-changes">
+                        <div class="type-changes-name">Income</div>
+                        <div class="type-changes-value">
+                            <div class="value-percentage"></div>
+                            <div class="value-number"></div>
+                        </div>
+                    </div>
+                    <div id="Budget-type-expenses" class="type-changes">
+                        <div class="type-changes-name">Expenses</div>
+                        <div class="type-changes-value">
+                            <div class="value-percentage"></div>
+                            <div class="value-number"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="Add-budget-container">
+                <select class="blue-border" id="Add-type">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+                <input class="blue-border" type="text" id="Add-description" placeholder="Add description">
+                <input class="blue-border" type="number" id="Add-value" placeholder="Value">
+                <button class="Add-btn blue-button"><i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
+            </div>
+            <div id="Budget-archive">
+                <div class="Income">
+                    <h2 class="Income-title">Income</h2>
+                    <div class="Income-list">
+                    </div>
+                </div>
+                <div class="Expenses">
+                    <h2 class="Expenses-title">Expenses</h2>
+                    <div class="Expenses-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://use.fontawesome.com/286afb115c.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
